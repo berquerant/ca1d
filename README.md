@@ -1,6 +1,6 @@
 # ca1d
 
-"""
+```
 $ ca1d --help
 Execute one-dimensional cellular automaton.
 
@@ -45,4 +45,4 @@ Options:
 
   -h, --help
           Print help information (use `-h` for a summary)
-"""
+```
