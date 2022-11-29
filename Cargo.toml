@@ -1,0 +1,14 @@
+[package]
+name = "ca1d"
+authors = ["berquerant"]
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/berquerant/ca1d"
+
+[dependencies]
+thiserror = "1.0"
+anyhow = "1.0" 
+chrono =  "0.4.23"
+rand = "0.8.5"
+clap = { version = "4.0.28", features = ["derive"] }
