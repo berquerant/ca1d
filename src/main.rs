@@ -31,7 +31,7 @@ fn main() {
         &cli.on_mark,
         &cli.off_mark,
     );
-    println!("{}", f.into_readable_string()); // output initial field
+    println!("{}", f.as_readable_string()); // output initial field
     let fit = f.field_iter(cli.generation);
     fit.for_each(|x| println!("{}", x));
 }

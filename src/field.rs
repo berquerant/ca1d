@@ -27,7 +27,7 @@ impl<'a> Field<'a> {
             n,
         }
     }
-    pub fn into_readable_string(&self) -> String {
+    pub fn as_readable_string(&self) -> String {
         let v: Vec<String> = self
             .values
             .iter()
@@ -87,7 +87,7 @@ impl<'a> Iterator for FieldIterator<'a> {
         }
         self.i += 1;
         self.field.update();
-        Some(self.field.into_readable_string())
+        Some(self.field.as_readable_string())
     }
 }
 
@@ -98,7 +98,7 @@ mod tests {
     #[test]
     fn test_into_readable_string() {
         let f = Field::new(vec![false, true, true], Rule::new(0), "1", "0");
-        let got = f.into_readable_string();
+        let got = f.as_readable_string();
         assert_eq!("011".to_owned(), got);
     }
 }
