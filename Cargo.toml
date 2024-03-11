@@ -9,6 +9,6 @@ repository = "https://github.com/berquerant/ca1d"
 [dependencies]
 thiserror = "1.0"
 anyhow = "1.0" 
-chrono =  "0.4.34"
+chrono =  "0.4.35"
 rand = "0.8.5"
 clap = { version = "4.5.1", features = ["derive"] }
