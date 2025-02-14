@@ -78,7 +78,7 @@ pub struct FieldIterator<'a> {
     n: usize,
 }
 
-impl<'a> Iterator for FieldIterator<'a> {
+impl Iterator for FieldIterator<'_> {
     type Item = String;
 
     fn next(&mut self) -> Option<Self::Item> {
