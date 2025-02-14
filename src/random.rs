@@ -15,7 +15,7 @@ impl BoolRng {
         BoolRng(r)
     }
     pub fn gen_bool(&mut self) -> bool {
-        let v: f64 = self.0.gen();
+        let v: f64 = self.0.random();
         v < 0.5
     }
     pub fn gen_bools(&mut self, n: usize) -> Vec<bool> {
