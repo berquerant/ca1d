@@ -1,7 +1,6 @@
 use chrono::Utc;
 use rand::prelude::*;
 use rand::rngs::StdRng;
-use rand::Rng;
 
 pub struct BoolRng(StdRng);
 
